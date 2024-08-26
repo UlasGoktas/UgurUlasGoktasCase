@@ -102,7 +102,7 @@
 				7C681B532C7D09AF0064AC16 /* AppInitial */,
 				7C681B242C7D090C0064AC16 /* ViewController.swift */,
 				7C681B542C7D09BE0064AC16 /* Resources */,
-				7C681B2E2C7D090E0064AC16 /* LaunchScreen.storyboard */,
+				7C681B552C7D0A490064AC16 /* LaunchScreen */,
 				7C681B292C7D090C0064AC16 /* UgurUlasGoktasCase.xcdatamodeld */,
 			);
 			path = UgurUlasGoktasCase;
@@ -141,6 +141,14 @@
 				7C681B312C7D090E0064AC16 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C681B552C7D0A490064AC16 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7C681B2E2C7D090E0064AC16 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
