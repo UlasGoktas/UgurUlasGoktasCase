@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		7C681B212C7D090C0064AC16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C681B202C7D090C0064AC16 /* AppDelegate.swift */; };
 		7C681B232C7D090C0064AC16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C681B222C7D090C0064AC16 /* SceneDelegate.swift */; };
-		7C681B252C7D090C0064AC16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C681B242C7D090C0064AC16 /* ViewController.swift */; };
 		7C681B2B2C7D090C0064AC16 /* UgurUlasGoktasCase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C681B292C7D090C0064AC16 /* UgurUlasGoktasCase.xcdatamodeld */; };
 		7C681B2D2C7D090E0064AC16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C681B2C2C7D090E0064AC16 /* Assets.xcassets */; };
 		7C681B302C7D090E0064AC16 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7C681B2F2C7D090E0064AC16 /* Base */; };
 		7C681B3B2C7D090E0064AC16 /* UgurUlasGoktasCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C681B3A2C7D090E0064AC16 /* UgurUlasGoktasCaseTests.swift */; };
 		7C681B452C7D090E0064AC16 /* UgurUlasGoktasCaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C681B442C7D090E0064AC16 /* UgurUlasGoktasCaseUITests.swift */; };
 		7C681B472C7D090E0064AC16 /* UgurUlasGoktasCaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C681B462C7D090E0064AC16 /* UgurUlasGoktasCaseUITestsLaunchTests.swift */; };
+		7C681B592C7D0AA40064AC16 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C681B582C7D0AA40064AC16 /* BaseViewController.swift */; };
+		7C681B5B2C7D0AE20064AC16 /* BaseViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C681B5A2C7D0AE20064AC16 /* BaseViewControllerProtocol.swift */; };
+		7C681B5E2C7D0D300064AC16 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C681B5D2C7D0D300064AC16 /* BaseViewModel.swift */; };
+		7C681B602C7D0D4D0064AC16 /* BaseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C681B5F2C7D0D4D0064AC16 /* BaseViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		7C681B1D2C7D090C0064AC16 /* UgurUlasGoktasCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UgurUlasGoktasCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C681B202C7D090C0064AC16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C681B222C7D090C0064AC16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C681B242C7D090C0064AC16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C681B2A2C7D090C0064AC16 /* UgurUlasGoktasCase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UgurUlasGoktasCase.xcdatamodel; sourceTree = "<group>"; };
 		7C681B2C2C7D090E0064AC16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C681B2F2C7D090E0064AC16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		7C681B402C7D090E0064AC16 /* UgurUlasGoktasCaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UgurUlasGoktasCaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C681B442C7D090E0064AC16 /* UgurUlasGoktasCaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UgurUlasGoktasCaseUITests.swift; sourceTree = "<group>"; };
 		7C681B462C7D090E0064AC16 /* UgurUlasGoktasCaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UgurUlasGoktasCaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7C681B582C7D0AA40064AC16 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7C681B5A2C7D0AE20064AC16 /* BaseViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocol.swift; sourceTree = "<group>"; };
+		7C681B5D2C7D0D300064AC16 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		7C681B5F2C7D0D4D0064AC16 /* BaseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +105,8 @@
 		7C681B1F2C7D090C0064AC16 /* UgurUlasGoktasCase */ = {
 			isa = PBXGroup;
 			children = (
+				7C681B562C7D0A760064AC16 /* Base */,
 				7C681B532C7D09AF0064AC16 /* AppInitial */,
-				7C681B242C7D090C0064AC16 /* ViewController.swift */,
 				7C681B542C7D09BE0064AC16 /* Resources */,
 				7C681B552C7D0A490064AC16 /* LaunchScreen */,
 				7C681B292C7D090C0064AC16 /* UgurUlasGoktasCase.xcdatamodeld */,
@@ -149,6 +155,33 @@
 				7C681B2E2C7D090E0064AC16 /* LaunchScreen.storyboard */,
 			);
 			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		7C681B562C7D0A760064AC16 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7C681B5C2C7D0C3E0064AC16 /* ViewModel */,
+				7C681B572C7D0A9A0064AC16 /* ViewController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7C681B572C7D0A9A0064AC16 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7C681B582C7D0AA40064AC16 /* BaseViewController.swift */,
+				7C681B5A2C7D0AE20064AC16 /* BaseViewControllerProtocol.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7C681B5C2C7D0C3E0064AC16 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7C681B5D2C7D0D300064AC16 /* BaseViewModel.swift */,
+				7C681B5F2C7D0D4D0064AC16 /* BaseViewModelProtocol.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,9 +315,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C681B2B2C7D090C0064AC16 /* UgurUlasGoktasCase.xcdatamodeld in Sources */,
-				7C681B252C7D090C0064AC16 /* ViewController.swift in Sources */,
+				7C681B5B2C7D0AE20064AC16 /* BaseViewControllerProtocol.swift in Sources */,
+				7C681B592C7D0AA40064AC16 /* BaseViewController.swift in Sources */,
 				7C681B212C7D090C0064AC16 /* AppDelegate.swift in Sources */,
 				7C681B232C7D090C0064AC16 /* SceneDelegate.swift in Sources */,
+				7C681B602C7D0D4D0064AC16 /* BaseViewModelProtocol.swift in Sources */,
+				7C681B5E2C7D0D300064AC16 /* BaseViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
