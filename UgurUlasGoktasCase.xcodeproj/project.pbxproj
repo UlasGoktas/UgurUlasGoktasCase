@@ -10,7 +10,6 @@
 		7C681B212C7D090C0064AC16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C681B202C7D090C0064AC16 /* AppDelegate.swift */; };
 		7C681B232C7D090C0064AC16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C681B222C7D090C0064AC16 /* SceneDelegate.swift */; };
 		7C681B252C7D090C0064AC16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C681B242C7D090C0064AC16 /* ViewController.swift */; };
-		7C681B282C7D090C0064AC16 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7C681B272C7D090C0064AC16 /* Base */; };
 		7C681B2B2C7D090C0064AC16 /* UgurUlasGoktasCase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C681B292C7D090C0064AC16 /* UgurUlasGoktasCase.xcdatamodeld */; };
 		7C681B2D2C7D090E0064AC16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C681B2C2C7D090E0064AC16 /* Assets.xcassets */; };
 		7C681B302C7D090E0064AC16 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7C681B2F2C7D090E0064AC16 /* Base */; };
@@ -41,7 +40,6 @@
 		7C681B202C7D090C0064AC16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C681B222C7D090C0064AC16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7C681B242C7D090C0064AC16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7C681B272C7D090C0064AC16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C681B2A2C7D090C0064AC16 /* UgurUlasGoktasCase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UgurUlasGoktasCase.xcdatamodel; sourceTree = "<group>"; };
 		7C681B2C2C7D090E0064AC16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C681B2F2C7D090E0064AC16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,10 +101,8 @@
 			children = (
 				7C681B532C7D09AF0064AC16 /* AppInitial */,
 				7C681B242C7D090C0064AC16 /* ViewController.swift */,
-				7C681B262C7D090C0064AC16 /* Main.storyboard */,
 				7C681B542C7D09BE0064AC16 /* Resources */,
 				7C681B2E2C7D090E0064AC16 /* LaunchScreen.storyboard */,
-				7C681B312C7D090E0064AC16 /* Info.plist */,
 				7C681B292C7D090C0064AC16 /* UgurUlasGoktasCase.xcdatamodeld */,
 			);
 			path = UgurUlasGoktasCase;
@@ -142,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				7C681B2C2C7D090E0064AC16 /* Assets.xcassets */,
+				7C681B312C7D090E0064AC16 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -252,7 +249,6 @@
 			files = (
 				7C681B2D2C7D090E0064AC16 /* Assets.xcassets in Resources */,
 				7C681B302C7D090E0064AC16 /* Base in Resources */,
-				7C681B282C7D090C0064AC16 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,14 +313,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7C681B262C7D090C0064AC16 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C681B272C7D090C0064AC16 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7C681B2E2C7D090E0064AC16 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -464,7 +452,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZGM65F7AMK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UgurUlasGoktasCase/Info.plist;
+				INFOPLIST_FILE = UgurUlasGoktasCase/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -492,7 +480,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZGM65F7AMK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UgurUlasGoktasCase/Info.plist;
+				INFOPLIST_FILE = UgurUlasGoktasCase/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
