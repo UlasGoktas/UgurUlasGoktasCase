@@ -101,11 +101,10 @@
 		7C681B1F2C7D090C0064AC16 /* UgurUlasGoktasCase */ = {
 			isa = PBXGroup;
 			children = (
-				7C681B202C7D090C0064AC16 /* AppDelegate.swift */,
-				7C681B222C7D090C0064AC16 /* SceneDelegate.swift */,
+				7C681B532C7D09AF0064AC16 /* AppInitial */,
 				7C681B242C7D090C0064AC16 /* ViewController.swift */,
 				7C681B262C7D090C0064AC16 /* Main.storyboard */,
-				7C681B2C2C7D090E0064AC16 /* Assets.xcassets */,
+				7C681B542C7D09BE0064AC16 /* Resources */,
 				7C681B2E2C7D090E0064AC16 /* LaunchScreen.storyboard */,
 				7C681B312C7D090E0064AC16 /* Info.plist */,
 				7C681B292C7D090C0064AC16 /* UgurUlasGoktasCase.xcdatamodeld */,
@@ -128,6 +127,23 @@
 				7C681B462C7D090E0064AC16 /* UgurUlasGoktasCaseUITestsLaunchTests.swift */,
 			);
 			path = UgurUlasGoktasCaseUITests;
+			sourceTree = "<group>";
+		};
+		7C681B532C7D09AF0064AC16 /* AppInitial */ = {
+			isa = PBXGroup;
+			children = (
+				7C681B202C7D090C0064AC16 /* AppDelegate.swift */,
+				7C681B222C7D090C0064AC16 /* SceneDelegate.swift */,
+			);
+			path = AppInitial;
+			sourceTree = "<group>";
+		};
+		7C681B542C7D09BE0064AC16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C681B2C2C7D090E0064AC16 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
