@@ -16,4 +16,6 @@ enum SystemImages: String {
     case filledCircle = "circle.inset.filled"
     case checkBox = "checkmark.square"
     case filledCheckBox = "checkmark.square.fill"
+    case leftArrow = "arrow.left"
+    case xmark = "xmark"
 }

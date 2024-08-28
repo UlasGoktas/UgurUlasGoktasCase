@@ -14,4 +14,13 @@ enum TextConstants: String {
     case addToCart = "Add to Cart"
     case turkishLiraCurrency = "₺"
     case entityNotFound = "Entity not found"
+    case complete = "Complete"
+    case total = "Total:"
+    case price = "Price:"
+    case plus = "+"
+    case minus = "-"
+    case eMarket = "E-Market"
+    case filterScreenApplyButtonText = "Primary"
+    case filter = "Filter"
+    case filterScreenHeaderText = "Sort By"
 }
