@@ -14,11 +14,11 @@ final class ProductListViewModel: BaseViewModel {
     private let favoriteDB: FavoriteDB
     
     // MARK: Variables
-    private var products: [Product] = []
-    private var filteredProducts: [Product] = []
-    private var selectedFilters: [String: [String]] = [:]
-    private var selectedSortOption: SortSelections?
-    private var searchText: String = ""
+    var products: [Product] = []
+    var filteredProducts: [Product] = []
+    var selectedFilters: [String: [String]] = [:]
+    var selectedSortOption: SortSelections?
+    var searchText: String = ""
     
     enum FilterType: String {
         case Brand
@@ -163,6 +163,8 @@ final class ProductListViewModel: BaseViewModel {
     
     func toggleFavorite(product: Product) {
         try? favoriteDB.toggle(product: product)
+        
+        NotificationCenter.default.post(name: .productListUpdateFavoriteDB, object: nil)
     }
     
     func isFavorite(product: Product) -> Bool {

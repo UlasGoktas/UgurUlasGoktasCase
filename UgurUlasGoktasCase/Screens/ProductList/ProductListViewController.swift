@@ -7,8 +7,9 @@
 
 import UIKit
 
-final class ProductListViewController: BaseViewController<ProductListViewModel> {
+final class ProductListViewController: BaseViewController {
     // MARK: Constants
+    private let viewModel = ProductListViewModel()
     private let collectionViewHeight: CGFloat = 250
     private let selectFilterButtonWidth: CGFloat = 150
     
@@ -41,7 +42,7 @@ final class ProductListViewController: BaseViewController<ProductListViewModel> 
         filterButton.translatesAutoresizingMaskIntoConstraints = false
         filterButton.setTitle(TextConstants.selectFilter.rawValue, for: .normal)
         filterButton.setTitleColor(.black, for: .normal)
-        filterButton.backgroundColor = UIColor(hex: "#D9D9D9")
+        filterButton.backgroundColor = .lightGray
         filterButton.addTarget(self, action: #selector(filterButtonOnTap), for: .touchUpInside)
         
         return filterButton
@@ -64,14 +65,35 @@ final class ProductListViewController: BaseViewController<ProductListViewModel> 
         return collectionView
     }()
     
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: .filtersApplied, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .favoriteListUpdateFavoriteDB, object: nil)
+    }
+    
     // MARK: Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupNotificationObservers()
         prepareSearchBar()
         prepareFilterView()
         prepareCollectionView()
         fetchProductList()
+    }
+    
+    private func setupNotificationObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(filtersApplied(_:)), name: .filtersApplied, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(favoritesUpdated), name: .favoriteListUpdateFavoriteDB, object: nil)
+    }
+    
+    @objc private func filtersApplied(_ notification: Notification) {
+        if let userInfo = notification.userInfo as? [String: Any],
+           let filters = userInfo["selectedFilters"] as? [String: [String]],
+           let sort = userInfo["selectedSort"] as? String? {
+            viewModel.applyFilters(selectedFilters: filters, sortSelection: sort) { [weak self] in
+                self?.collectionView.reloadData()
+            }
+        }
     }
     
     private func prepareSearchBar() {
@@ -127,12 +149,20 @@ final class ProductListViewController: BaseViewController<ProductListViewModel> 
     }
     
     @objc private func filterButtonOnTap() {
-        let filterOptions = viewModel.getFilterOptions()
-        let filterViewController = FilterViewController(filterOptions: filterOptions, sortSelections: viewModel.sortSelections)
+        let filterSelections = viewModel.getFilterOptions()
+        let filterViewController = FilterViewController(
+            filterSelections: filterSelections,
+            sortSelections: viewModel.sortSelections,
+            selectedFilters: viewModel.selectedFilters,
+            selectedSort: viewModel.selectedSortOption?.rawValue
+        )
         filterViewController.delegate = self
         filterViewController.modalPresentationStyle = .automatic
-        
         present(filterViewController, animated: true, completion: nil)
+    }
+    
+    @objc private func favoritesUpdated() {
+        fetchProductList()
     }
 }
 
@@ -166,10 +196,10 @@ extension ProductListViewController: UICollectionViewDataSource, UICollectionVie
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let product = viewModel.product(at: indexPath.row)
-//        let productDetailViewController = ProductDetailViewController(product: product)
-//
-//        navigationController?.pushViewController(productDetailViewController, animated: true)
+        guard let product = viewModel.product(at: indexPath.row) else { return }
+        let productDetailViewController = ProductDetailViewController(product: product)
+
+        navigationController?.pushViewController(productDetailViewController, animated: true)
     }
 }
 
