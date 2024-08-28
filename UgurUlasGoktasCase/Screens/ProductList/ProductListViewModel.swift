@@ -105,7 +105,7 @@ final class ProductListViewModel: BaseViewModel {
         }
     }
     
-    private func sortProducts() {
+    func sortProducts() {
         guard let sortOption = selectedSortOption else { return }
         
         switch sortOption {
@@ -140,7 +140,7 @@ final class ProductListViewModel: BaseViewModel {
         }
     }
     
-    private func applyFiltersAndSearch(completion: @escaping () -> Void) {
+    func applyFiltersAndSearch(completion: @escaping () -> Void) {
         filterProducts()
         sortProducts()
         completion()
