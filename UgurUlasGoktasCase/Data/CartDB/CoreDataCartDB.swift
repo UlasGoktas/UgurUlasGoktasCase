@@ -77,4 +77,18 @@ class CoreDataCartDB: CartDBStrategy {
             try context.save()
         }
     }
+    
+    func clearCart() throws {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+        let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        
+        do {
+            try context.execute(batchDeleteRequest)
+            try context.save()
+        } catch {
+            throw CartError.failedToClearCart
+        }
+        
+        NotificationCenter.default.post(name: .cartDBChanged, object: nil)
+    }
 }

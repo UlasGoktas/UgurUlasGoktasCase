@@ -14,6 +14,7 @@ protocol CartDBStrategy {
     func fetchProductList() throws -> [Product]?
     func addToCart(product: Product) throws
     func removeFromCart(product: Product) throws
+    func clearCart() throws
 }
 
 extension CartDBStrategy {
@@ -65,5 +66,3 @@ extension CartDBStrategy {
         NotificationCenter.default.post(name: .cartDBChanged, object: nil)
     }
 }
-
-

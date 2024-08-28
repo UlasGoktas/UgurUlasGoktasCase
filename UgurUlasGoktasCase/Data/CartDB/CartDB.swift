@@ -5,8 +5,6 @@
 //  Created by Ulas Goktas on 27.08.2024.
 //
 
-
-
 final class CartDB {
     private var strategy: CartDBStrategy
 
@@ -40,5 +38,9 @@ final class CartDB {
 
     func removeFromCart(product: Product) throws {
         try strategy.removeFromCart(product: product)
+    }
+    
+    func clearCart() throws {
+        try strategy.clearCart()
     }
 }
