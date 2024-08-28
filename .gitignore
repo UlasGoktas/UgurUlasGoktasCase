@@ -1,0 +1,61 @@
+# Xcode
+#
+# Build generated
+DerivedData/
+Build/
+*.xcworkspace
+xcuserdata/
+
+# Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+
+# Swift Package Manager
+# Add this line if you are using Swift Package Manager
+/.build/
+
+# CocoaPods
+# Add this line if you are using CocoaPods
+Pods/
+
+# Carthage
+# Add this line if you are using Carthage
+Carthage/Build/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# fastlane
+# It is recommended to not store the screenshots in the git repo.
+# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection by AppCode
+.idea/
+
+# AppCode
+*.iml
+.idea/
+
+# SPM
+Packages/
+.swiftpm/
+
+# Documentation
+*.docc-build/
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Bundle artifacts
+*.xcarchive
+
+# Backup files
+*.bak
+*.swp
