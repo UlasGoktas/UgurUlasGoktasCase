@@ -5,7 +5,7 @@
 //  Created by Ulas Goktas on 27.08.2024.
 //
 
-final class CartDB {
+class CartDB {
     private var strategy: CartDBStrategy
 
     init(strategy: CartDBStrategy) {
