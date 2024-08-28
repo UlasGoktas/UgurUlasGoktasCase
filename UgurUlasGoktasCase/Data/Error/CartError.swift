@@ -11,4 +11,5 @@ enum CartError: Error {
     case failedToUpdateProduct
     case failedToAddProduct
     case failedToRemoveProduct
+    case failedToClearCart
 }
