@@ -12,7 +12,7 @@ final class FilterSectionHeader: UITableViewHeaderFooterView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: .extraLargeMediumPoint, weight: .regular)
-        label.textColor = UIColor(hex: "#333333").withAlphaComponent(0.7)
+        label.textColor = .primaryDarkGray.withAlphaComponent(0.7)
         
         return label
     }()
