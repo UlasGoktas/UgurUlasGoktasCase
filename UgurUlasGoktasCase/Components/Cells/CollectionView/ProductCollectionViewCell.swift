@@ -50,7 +50,7 @@ final class ProductCollectionViewCell: UICollectionViewCell {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle(TextConstants.addToCart.rawValue, for: .normal)
-        button.backgroundColor = UIColor(hex: "#2A59FE")
+        button.backgroundColor = .primaryBlue
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = .mediumPoint
         
