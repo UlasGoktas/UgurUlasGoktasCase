@@ -1,0 +1,22 @@
+[
+    {
+        "brand": "BrandA",
+        "createdAt": "2024-01-01T10:00:00Z",
+        "description": "This is the first product description.",
+        "id": "1",
+        "image": "https://example.com/image1.jpg",
+        "model": "ModelX",
+        "name": "Product 1",
+        "price": "100.00"
+    },
+    {
+        "brand": "BrandB",
+        "createdAt": "2024-02-01T15:30:00Z",
+        "description": "This is the second product description.",
+        "id": "2",
+        "image": "https://example.com/image2.jpg",
+        "model": "ModelY",
+        "name": "Product 2",
+        "price": "150.00"
+    }
+]
