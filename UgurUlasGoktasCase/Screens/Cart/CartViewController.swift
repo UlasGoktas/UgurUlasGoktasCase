@@ -81,8 +81,8 @@ final class CartViewController: BaseViewController {
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
                 self?.labelTotalPrice.text = "\(TextConstants.total.rawValue) \(self?.viewModel.totalPrice ?? self?.emptyCartValue ?? .empty)"
-//                self?.tabBarItem.badgeValue = self?.viewModel.cartItems.isEmpty == true ? nil : "\(String(describing: self?.viewModel.cartItems.count))"
                 
+                // TODO: badge
                 let itemCount = self?.viewModel.cartItems.reduce(0) { $0 + ($1.quantity ?? 0) }
                 self?.tabBarItem.badgeValue = itemCount ?? 0 > 0 ? "\(itemCount)" : nil
             }
